@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form id="myForm" action="http://127.0.0.1:5000/register" method="POST">
+    <p>To verify it is you, enter your email and password in the fields.</p>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="pwd"><br><br>
+    <input type="button" onclick="myFunction()" value="Submit form">
+</form>
+<script>
+function myFunction() {
+  document.getElementById("myForm").submit();
+}
+</script>
+</body>
+</html>
